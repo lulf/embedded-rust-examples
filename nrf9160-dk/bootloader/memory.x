@@ -1,8 +1,7 @@
 MEMORY
 {
   /* NOTE 1 K = 1 KiBi = 1024 bytes */
-  /* Assumes Secure Partition Manager (SPM) flashed at the start */
-  FLASH                             : ORIGIN = 0x00050000, LENGTH = 24K
+  FLASH                             : ORIGIN = 0x00000000, LENGTH = 24K
   BOOTLOADER_STATE                  : ORIGIN = 0x00056000, LENGTH = 4K
   ACTIVE                            : ORIGIN = 0x00057000, LENGTH = 64K
   DFU                               : ORIGIN = 0x00067000, LENGTH = 68K
